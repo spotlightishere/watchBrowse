@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -63,6 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		429D73ED266ED4A500419B44 /* watchBrowse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "watchBrowse-Info.plist"; sourceTree = "<group>"; };
 		42B01F712587508D00A7517F /* watchBrowse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchBrowse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B01F752587508D00A7517F /* watchBrowse WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchBrowse WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B01F7B2587508D00A7517F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 		42B01F6A2587508D00A7517F = {
 			isa = PBXGroup;
 			children = (
+				429D73ED266ED4A500419B44 /* watchBrowse-Info.plist */,
 				42B01F792587508D00A7517F /* watchBrowse WatchKit App */,
 				42B01F882587508D00A7517F /* watchBrowse WatchKit Extension */,
 				42B01F722587508D00A7517F /* Products */,
@@ -226,11 +228,12 @@
 					};
 					42B01F832587508D00A7517F = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
 			buildConfigurationList = 42B01F6E2587508D00A7517F /* Build configuration list for PBXProject "watchBrowse" */;
-			compatibilityVersion = "Xcode 12.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -437,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"watchBrowse WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = NP873NYDVX;
@@ -447,13 +451,15 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.watchBrowse.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -461,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"watchBrowse WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = NP873NYDVX;
@@ -471,13 +478,14 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.watchBrowse.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
@@ -491,13 +499,14 @@
 				DEVELOPMENT_TEAM = NP873NYDVX;
 				IBSC_MODULE = watchBrowse_WatchKit_Extension;
 				INFOPLIST_FILE = "watchBrowse WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.watchBrowse.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -511,13 +520,14 @@
 				DEVELOPMENT_TEAM = NP873NYDVX;
 				IBSC_MODULE = watchBrowse_WatchKit_Extension;
 				INFOPLIST_FILE = "watchBrowse WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.watchBrowse.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
@@ -527,7 +537,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NP873NYDVX;
-				MARKETING_VERSION = 1.0;
+				INFOPLIST_FILE = "watchBrowse-Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = watchBrowse;
+				INFOPLIST_KEY_CFBundleName = watchBrowse;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.watchBrowse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -540,7 +554,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NP873NYDVX;
-				MARKETING_VERSION = 1.0;
+				INFOPLIST_FILE = "watchBrowse-Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = watchBrowse;
+				INFOPLIST_KEY_CFBundleName = watchBrowse;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.watchBrowse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

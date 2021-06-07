@@ -9,7 +9,7 @@ import Dynamic
 import SwiftUI
 
 struct ContentView: View {
-    @State private var enteredUrl = ""
+    @State private var enteredUrl = "https://e621.net/posts?tags=rating%3As+order%3Afavcount"
     
     var body: some View {
         List {
