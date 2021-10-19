@@ -30,8 +30,10 @@ struct ContentView: View {
 }
 
 func goToUrl(givenUrl: String) {
-    let view = Dynamic.SFSafariViewController.initWithURL(URL(string: givenUrl))
-    Dynamic.UIApplication.sharedApplication.keyWindow.rootViewController.presentViewController(view, animated:true, completion: nil)
+    let url = URL(string: givenUrl)
+    let view = Dynamic._SFNanoBrowserViewController()
+    Dynamic.UIApplication.sharedApplication.keyWindow.rootViewController.presentViewController(view, animated: true, completion: nil)
+    view.loadURL(url)
 }
 
 struct ContentView_Previews: PreviewProvider {
