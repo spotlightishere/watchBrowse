@@ -228,7 +228,7 @@
 					};
 					42B01F832587508D00A7517F = {
 						CreatedOnToolsVersion = 12.3;
-						LastSwiftMigration = 1250;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};

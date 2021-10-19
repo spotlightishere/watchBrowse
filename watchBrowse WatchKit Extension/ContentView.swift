@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var enteredUrl = "https://google.com"
-    
+
     var body: some View {
         List {
             TextField("URL", text: $enteredUrl, onCommit: {
@@ -20,7 +20,7 @@ struct ContentView: View {
                 }
             })
             .textContentType(.URL)
-            
+
             Button("Go to", action: {
                 goToUrl(givenUrl: enteredUrl)
             })
