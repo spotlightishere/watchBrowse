@@ -1,13 +1,12 @@
 //
-//  HostingController.swift
+//  watchBrowseApp.swift
 //  watchBrowse WatchKit Extension
 //
-//  Created by Spotlight Deveaux on 12/14/20.
+//  Created by Spotlight Deveaux on 2021-11-10.
 //
 
 import Foundation
 import SwiftUI
-import WatchKit
 
 class NSFileManagerExtended: NSObject {
     @objc func containerURL(forSecurityApplicationGroupIdentifier _: String) -> URL {
@@ -15,8 +14,9 @@ class NSFileManagerExtended: NSObject {
     }
 }
 
-class HostingController: WKHostingController<ContentView> {
-    override init() {
+@main
+struct watchBrowseApp: App {
+    init() {
         // We need SafariServices before anything else.
         dlopen("/System/Library/Frameworks/SafariServices.framework/SafariServices", RTLD_NOW)
 
@@ -29,11 +29,13 @@ class HostingController: WKHostingController<ContentView> {
         let new = class_getInstanceMethod(newFileManager, #selector(NSFileManagerExtended.containerURL(forSecurityApplicationGroupIdentifier:)))
 
         method_exchangeImplementations(original!, new!)
-
-        super.init()
     }
 
-    override var body: ContentView {
-        ContentView()
+    var body: some Scene {
+        WindowGroup {
+            NavigationView {
+                ContentView()
+            }
+        }
     }
 }
