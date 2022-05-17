@@ -13,7 +13,6 @@
 		421B0E25273C47400024831A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B0E24273C47400024831A /* ContentView.swift */; };
 		421B0E27273C47400024831A /* watchBrowseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B0E26273C47400024831A /* watchBrowseApp.swift */; };
 		421B0E29273C47400024831A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B0E28273C47400024831A /* ComplicationController.swift */; };
-		421B0E2B273C47400024831A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421B0E2A273C47400024831A /* Assets.xcassets */; };
 		421B0E2E273C47400024831A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421B0E2D273C47400024831A /* Preview Assets.xcassets */; };
 		421B0E41273C47ED0024831A /* Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 421B0E40273C47ED0024831A /* Dynamic */; };
 /* End PBXBuildFile section */
@@ -68,7 +67,6 @@
 		421B0E24273C47400024831A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		421B0E26273C47400024831A /* watchBrowseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchBrowseApp.swift; sourceTree = "<group>"; };
 		421B0E28273C47400024831A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
-		421B0E2A273C47400024831A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		421B0E2D273C47400024831A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		421B0E2F273C47400024831A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,7 +117,6 @@
 				421B0E24273C47400024831A /* ContentView.swift */,
 				421B0E26273C47400024831A /* watchBrowseApp.swift */,
 				421B0E28273C47400024831A /* ComplicationController.swift */,
-				421B0E2A273C47400024831A /* Assets.xcassets */,
 				421B0E2F273C47400024831A /* Info.plist */,
 				421B0E2C273C47400024831A /* Preview Content */,
 			);
@@ -266,7 +263,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				421B0E2E273C47400024831A /* Preview Assets.xcassets in Resources */,
-				421B0E2B273C47400024831A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +412,6 @@
 		421B0E33273C47400024831A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"watchBrowse WatchKit Extension/Preview Content\"";
@@ -425,7 +420,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "watchBrowse WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "watchBrowse WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -448,7 +442,6 @@
 		421B0E34273C47400024831A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"watchBrowse WatchKit Extension/Preview Content\"";
@@ -457,7 +450,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "watchBrowse WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "watchBrowse WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
