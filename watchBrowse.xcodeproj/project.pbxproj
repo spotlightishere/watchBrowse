@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		421B0E15273C473F0024831A /* watchBrowse WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 421B0E14273C473F0024831A /* watchBrowse WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		421B0E1A273C47400024831A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421B0E19273C47400024831A /* Assets.xcassets */; };
-		421B0E20273C47400024831A /* watchBrowse WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 421B0E1F273C47400024831A /* watchBrowse WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		421B0E25273C47400024831A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B0E24273C47400024831A /* ContentView.swift */; };
 		421B0E27273C47400024831A /* watchBrowseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B0E26273C47400024831A /* watchBrowseApp.swift */; };
 		421B0E29273C47400024831A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B0E28273C47400024831A /* ComplicationController.swift */; };
@@ -17,53 +15,9 @@
 		421B0E41273C47ED0024831A /* Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 421B0E40273C47ED0024831A /* Dynamic */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		421B0E16273C473F0024831A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 421B0E0A273C473F0024831A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 421B0E13273C473F0024831A;
-			remoteInfo = "watchBrowse WatchKit App";
-		};
-		421B0E21273C47400024831A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 421B0E0A273C473F0024831A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 421B0E1E273C47400024831A;
-			remoteInfo = "watchBrowse WatchKit Extension";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		421B0E35273C47400024831A /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				421B0E20273C47400024831A /* watchBrowse WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		421B0E39273C47400024831A /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				421B0E15273C473F0024831A /* watchBrowse WatchKit App.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		421B0E10273C473F0024831A /* watchBrowse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchBrowse.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		421B0E14273C473F0024831A /* watchBrowse WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchBrowse WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		421B0E14273C473F0024831A /* watchBrowse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchBrowse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		421B0E19273C47400024831A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		421B0E1F273C47400024831A /* watchBrowse WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchBrowse WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		421B0E24273C47400024831A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		421B0E26273C47400024831A /* watchBrowseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchBrowseApp.swift; sourceTree = "<group>"; };
 		421B0E28273C47400024831A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -96,9 +50,7 @@
 		421B0E11273C473F0024831A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				421B0E10273C473F0024831A /* watchBrowse.app */,
-				421B0E14273C473F0024831A /* watchBrowse WatchKit App.app */,
-				421B0E1F273C47400024831A /* watchBrowse WatchKit Extension.appex */,
+				421B0E14273C473F0024831A /* watchBrowse.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,62 +93,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		421B0E0F273C473F0024831A /* watchBrowse */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 421B0E3A273C47400024831A /* Build configuration list for PBXNativeTarget "watchBrowse" */;
-			buildPhases = (
-				421B0E0E273C473F0024831A /* Resources */,
-				421B0E39273C47400024831A /* Embed Watch Content */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				421B0E17273C473F0024831A /* PBXTargetDependency */,
-			);
-			name = watchBrowse;
-			packageProductDependencies = (
-				421B0E3E273C47C10024831A /* Dynamic */,
-			);
-			productName = watchBrowse;
-			productReference = 421B0E10273C473F0024831A /* watchBrowse.app */;
-			productType = "com.apple.product-type.application.watchapp2-container";
-		};
 		421B0E13273C473F0024831A /* watchBrowse WatchKit App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 421B0E36273C47400024831A /* Build configuration list for PBXNativeTarget "watchBrowse WatchKit App" */;
 			buildPhases = (
 				421B0E12273C473F0024831A /* Resources */,
-				421B0E35273C47400024831A /* Embed App Extensions */,
+				421B0E1B273C47400024831A /* Sources */,
+				421B0E1C273C47400024831A /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				421B0E22273C47400024831A /* PBXTargetDependency */,
 			);
 			name = "watchBrowse WatchKit App";
 			productName = "watchBrowse WatchKit App";
-			productReference = 421B0E14273C473F0024831A /* watchBrowse WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		421B0E1E273C47400024831A /* watchBrowse WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 421B0E32273C47400024831A /* Build configuration list for PBXNativeTarget "watchBrowse WatchKit Extension" */;
-			buildPhases = (
-				421B0E1B273C47400024831A /* Sources */,
-				421B0E1C273C47400024831A /* Frameworks */,
-				421B0E1D273C47400024831A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "watchBrowse WatchKit Extension";
-			packageProductDependencies = (
-				421B0E40273C47ED0024831A /* Dynamic */,
-			);
-			productName = "watchBrowse WatchKit Extension";
-			productReference = 421B0E1F273C47400024831A /* watchBrowse WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
+			productReference = 421B0E14273C473F0024831A /* watchBrowse.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -206,15 +118,9 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					421B0E0F273C473F0024831A = {
-						CreatedOnToolsVersion = 13.2;
-					};
 					421B0E13273C473F0024831A = {
-						CreatedOnToolsVersion = 13.2;
-					};
-					421B0E1E273C47400024831A = {
 						CreatedOnToolsVersion = 13.2;
 					};
 				};
@@ -235,34 +141,18 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				421B0E0F273C473F0024831A /* watchBrowse */,
 				421B0E13273C473F0024831A /* watchBrowse WatchKit App */,
-				421B0E1E273C47400024831A /* watchBrowse WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		421B0E0E273C473F0024831A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		421B0E12273C473F0024831A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				421B0E1A273C47400024831A /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		421B0E1D273C47400024831A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 				421B0E2E273C47400024831A /* Preview Assets.xcassets in Resources */,
+				421B0E1A273C47400024831A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,19 +170,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		421B0E17273C473F0024831A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 421B0E13273C473F0024831A /* watchBrowse WatchKit App */;
-			targetProxy = 421B0E16273C473F0024831A /* PBXContainerItemProxy */;
-		};
-		421B0E22273C47400024831A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 421B0E1E273C47400024831A /* watchBrowse WatchKit Extension */;
-			targetProxy = 421B0E21273C47400024831A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		421B0E30273C47400024831A /* Debug */ = {
@@ -409,66 +286,6 @@
 			};
 			name = Release;
 		};
-		421B0E33273C47400024831A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"watchBrowse WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = NP873NYDVX;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "watchBrowse WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "watchBrowse WatchKit Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKWatchOnly = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.watchBrowse.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
-			};
-			name = Debug;
-		};
-		421B0E34273C47400024831A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"watchBrowse WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = NP873NYDVX;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "watchBrowse WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "watchBrowse WatchKit Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKWatchOnly = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.watchBrowse.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
-			};
-			name = Release;
-		};
 		421B0E37273C47400024831A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -479,13 +296,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NP873NYDVX;
 				GENERATE_INFOPLIST_FILE = YES;
-				IBSC_MODULE = watchBrowse_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "watchBrowse WatchKit App";
 				INFOPLIST_KEY_NSContactsUsageDescription = "Apparently the watchOS keyboard requires Contacts access when pulled up via WebKit.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.watchBrowse.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.watchBrowse;
+				PRODUCT_NAME = watchBrowse;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -505,45 +325,22 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NP873NYDVX;
 				GENERATE_INFOPLIST_FILE = YES;
-				IBSC_MODULE = watchBrowse_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "watchBrowse WatchKit App";
 				INFOPLIST_KEY_NSContactsUsageDescription = "Apparently the watchOS keyboard requires Contacts access when pulled up via WebKit.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.watchBrowse.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.watchBrowse;
+				PRODUCT_NAME = watchBrowse;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 8.3;
-			};
-			name = Release;
-		};
-		421B0E3B273C47400024831A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NP873NYDVX;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.watchBrowse;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		421B0E3C273C47400024831A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NP873NYDVX;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.watchBrowse;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -559,29 +356,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		421B0E32273C47400024831A /* Build configuration list for PBXNativeTarget "watchBrowse WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				421B0E33273C47400024831A /* Debug */,
-				421B0E34273C47400024831A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		421B0E36273C47400024831A /* Build configuration list for PBXNativeTarget "watchBrowse WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				421B0E37273C47400024831A /* Debug */,
 				421B0E38273C47400024831A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		421B0E3A273C47400024831A /* Build configuration list for PBXNativeTarget "watchBrowse" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				421B0E3B273C47400024831A /* Debug */,
-				421B0E3C273C47400024831A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -600,11 +379,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		421B0E3E273C47C10024831A /* Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 421B0E3D273C47C10024831A /* XCRemoteSwiftPackageReference "Dynamic" */;
-			productName = Dynamic;
-		};
 		421B0E40273C47ED0024831A /* Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 421B0E3D273C47C10024831A /* XCRemoteSwiftPackageReference "Dynamic" */;
